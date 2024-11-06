@@ -7,9 +7,7 @@ from sqlalchemy.orm import sessionmaker
 import os
 
 app = FastAPI()
-#test codebuild
-# Database configuration
-#test
+#test container
 
 engine = create_engine("postgresql://root:pass1234@database-1.cf00csegghpu.us-east-1.rds.amazonaws.com:5432/postgres")
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
